@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  user-select: none;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgb(51, 51, 51);
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+.headerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+.header {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 10px;
+  text-align: center;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  text-shadow: 5px 5px 16px black;
+}
+
+#grid {
+  margin-top: 5vh;
+  display: grid;
+  gap: 2vh;
+  justify-content: center;
+  margin-bottom: 7vh;
+}
+.city {
+  border: 2px solid #fff;
+  box-shadow: 2px 2px 7px white;
+  width: 80vw;
+  height: 10vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 1vw;
+  -webkit-text-stroke: black 1px;
+}
+
+.Pai {
+  background-image: url("../Sources/Pai-chiang-mai-thailand_opt.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Chiang {
+  background-image: url("../Sources/chaing\ mai.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Phuket {
+  background-image: url("../Sources/phuket.jpg");
+  background-size: 80vw 10vh;
+  background-repeat: no-repeat;
+}
+.Krabi {
+  background-image: url("../Sources/krabi.png");
+  background-size: 80vw 10vh;
+  background-repeat: no-repeat;
+}
+.Tao {
+  background-image: url("../Sources/kohTao.png");
+  background-size: 80vw 10vh;
+  background-repeat: no-repeat;
+}
+.Phangan {
+  background-image: url("../Sources/koh\ phangan.jpg");
+  background-size: 80vw 10vh;
+  background-repeat: no-repeat;
+}
+.Samui {
+  background-image: url("../Sources/samui.png");
+  background-size: 80vw 10vh;
+  background-repeat: no-repeat;
+}
+.Bangkok {
+  background-image: url("../Sources/bangkok.png");
+  background-size: 80vw 10vh;
+  background-repeat: no-repeat;
+}
+
+.city:hover {
+  transform: scale(1.05);
+}
+
+.todo {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 1vh;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+p {
+  color: #fff;
+  direction: rtl;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: underline;
+  height: 34px;
+  width: 70vw;
+  text-align: center;
+  opacity: 1;
+}
+img {
+  width: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+hr {
+  margin-top: 30px;
+  width: 100vw;
+}
+.settings {
+  display: flex;
+  width: 70vw;
+  justify-content: space-between;
+}
+.addInput {
+  background-color: transparent;
+  border: black;
+  border-bottom: 2px dashed black;
+  margin-top: 5px;
+  height: 20px;
+  color: black;
+  direction: rtl;
+  font-size: 1.4rem;
+  width: 80%;
+}
+.addInput:focus {
+  outline: none;
+}
+.divInput {
+  border: 1px solid #fff;
+  height: 70px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 3vw;
+}
+.cancleAndOkDiv {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.cancle,
+.ok {
+  cursor: pointer;
+}
+.editInput {
+  background-color: transparent;
+  border: black;
+  border-bottom: 2px dashed white;
+  margin-top: 5px;
+  height: 20px;
+  color: white;
+  direction: rtl;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.editInput:focus {
+  outline: none;
+}
+.Clicked {
+  text-decoration: line-through;
+  font-size: 1rem;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+@media screen and (min-width: 296px) {
+  .city {
+    height: 5vh;
+    font-size: 1.7rem;
+    border-radius: 4vw;
+  }
+  #grid {
+    gap: 2vh;
+  }
+  .header {
+    font-size: 2.7rem;
+  }
+}
